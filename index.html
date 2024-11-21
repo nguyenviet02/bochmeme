@@ -60,15 +60,33 @@
 			<img src="./img/main.svg" alt="main">
 		</div>
 
-		<div class="ribbon">
-			<img src="./img/7.svg" alt="">
-			<p>Book of chill</p>
-			<img src="./img/3.svg" alt="">
-			<p>Book of chill</p>
-			<img src="./img/1.svg" alt="">
-			<p>Book of chill</p>
-			<img src="./img/4.svg" alt="">
-			<p>Book of chill</p>
+		<div class="ribbon mySwiper">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<img src="./img/7.svg" alt="">
+					<p>Book of chill</p>
+				</div>
+				<div class="swiper-slide">
+					<img src="./img/3.svg" alt="">
+					<p>Book of chill</p>
+				</div>
+				<div class="swiper-slide">
+					<img src="./img/1.svg" alt="">
+					<p>Book of chill</p>
+				</div>
+				<div class="swiper-slide">
+					<img src="./img/4.svg" alt="">
+					<p>Book of chill</p>
+				</div>
+				<div class="swiper-slide">
+					<img src="./img/4.svg" alt="">
+					<p>Book of chill</p>
+				</div>
+				<div class="swiper-slide">
+					<img src="./img/4.svg" alt="">
+					<p>Book of chill</p>
+				</div>
+			</div>
 		</div>
 		<div class="press">
 			<img src="./img/Press.svg" alt="">
@@ -91,7 +109,9 @@
 					<h2>ABOUT
 						<img src="./img/Marker.svg" alt="">
 					</h2>
-					<p>“Book of chill” was created in honor of Phillip Bankss, known as an artist who creates internet memes and digital art, especially with his character “Chill Guy” and his amazing series of artworks. $BOCH on the Solana blockchain was created to spread his artwork to people on social media who love meme art</p>
+					<p>“Book of chill” was created in honor of Phillip Bankss, known as an artist who creates internet memes and
+						digital art, especially with his character “Chill Guy” and his amazing series of artworks. $BOCH on the
+						Solana blockchain was created to spread his artwork to people on social media who love meme art</p>
 				</div>
 			</div>
 			<div class="gallery">
@@ -115,6 +135,32 @@
 			</div>
 		</div>
 	</main>
+	<!-- Swiper JS -->
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+	<!-- Initialize Swiper -->
+	<script>
+		var swiper = new Swiper(".mySwiper", {
+			slidesPerView: 4,
+			loop: true,
+			autoplay: {
+				delay: 800,
+				disableOnInteraction: false,
+			},
+			pagination: {
+				el: ".swiper-pagination",
+				clickable: true,
+			},
+			breakpoints: {
+				0: {
+					slidesPerView: 3,
+				},
+				768: {
+					slidesPerView: 4,
+				},
+			}
+		});
+	</script>
 	<script src="./scripts.js"></script>
 </body>
 
