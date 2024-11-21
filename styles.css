@@ -446,7 +446,3 @@
 .sidebar.show {
   left: 0;
 }
-
-.swiper-container-free-mode > .swiper-wrapper{
-  transition-timing-function : linear !important;
-}
