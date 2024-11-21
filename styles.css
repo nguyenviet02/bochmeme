@@ -376,3 +376,50 @@
 		margin: 0;
 	}
 }
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  height: 100%;
+  width: 100%;
+  background: #fff;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  transition: left 0.3s ease;
+}
+
+.sidebar-header {
+  padding: 10px;
+  background: #3d2020;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#close-btn {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.sidebar-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sidebar-content a {
+	font-size: clamp(1rem, 0.6479rem + 1.5023vw, 2rem);
+  font-weight: 500;
+  color: #000;
+  text-decoration: none;
+  font-family: 'Single Day';
+}
+
+.sidebar.show {
+  left: 0;
+}
