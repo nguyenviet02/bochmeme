@@ -305,7 +305,7 @@
 	font-family: 'Luckiest Guy';
 	font-size: clamp(4.5rem, 3.8838rem + 2.6291vw, 6.25rem);
 	line-height: clamp(2.5rem, 1.368rem + 3.5634vw, 6.25rem);
-	color: #002236;
+	color: #fff;
 	text-align: center;
 	display: flex;
 	justify-content: center;
@@ -317,7 +317,7 @@
 	font-family: 'Single Day';
 	font-size: clamp(1rem, 0.6479rem + 1.5023vw, 2rem);
 	line-height: clamp(1.5rem, 1.1479rem + 1.5023vw, 2.5rem);
-	color: #002236;
+	color: #fff;
 	text-align: center;
 	margin-top: 1.5rem;
 	padding-inline: 5rem;
