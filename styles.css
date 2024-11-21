@@ -340,7 +340,7 @@
 	}
 
 	.xs {
-		display: block;
+		display: flex !important;
 	}
 
 	.menu .nav {
