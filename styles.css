@@ -1,0 +1,378 @@
+.container-layout {
+  min-height: 200vh;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: #fff;
+  width: 100%;
+  max-width: 920px;
+  margin: 0 auto;
+  height: clamp(3.75rem, 3.2218rem + 2.2535vw, 5.25rem);
+  margin-top: clamp(1rem, 0.8239rem + 0.7512vw, 1.5rem);
+  border-radius: clamp(1rem, 0.8239rem + 0.7512vw, 1.5rem);
+  border: 3px solid black;
+  box-shadow: 0px 2px 0px 0px rgba(0, 0, 0);
+  position: relative;
+}
+
+.mock {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 100%;
+  background-color: #fff;
+  border: 2px solid black;
+  top: -8px;
+}
+
+.mock::before {
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 72px;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-57%);
+  background-color: #000;
+}
+
+.mock1 {
+  left: 85px;
+}
+
+.mock2 {
+  right: 85px;
+}
+
+.menu {
+  height: 100%;
+  width: 100%;
+  padding-left: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu .logo {
+  width: clamp(7.5rem, 7.0599rem + 1.8779vw, 8.75rem);
+  height: clamp(1.875rem, 1.743rem + 0.5634vw, 2.25rem);
+  flex-shrink: 0;
+}
+
+.menu .logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.menu .nav {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.menu .nav a {
+  font-size: clamp(1rem, 0.6479rem + 1.5023vw, 2rem);
+  font-weight: 500;
+  color: #000;
+  text-decoration: none;
+  font-family: 'Single Day';
+}
+
+.menu .btns {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: clamp(2.625rem, 2.493rem + 0.5634vw, 3rem);
+  margin-right: 16px;
+}
+
+.menu .btns button {
+  height: 36px;
+  width: 36px;
+  padding: 8px;
+  border: 2px solid #000;
+  border-radius: 8px;
+  box-shadow: 0px 2px 0px 0px rgba(0, 0, 0);
+  background-color: #006ed4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.menu .btns button.btn-text {
+  width: fit-content;
+  font-family: 'Single Day';
+  font-size: clamp(1.25rem, 1.0739rem + 0.7512vw, 1.75rem);
+  color: #fff;
+}
+
+.hero {
+  width: 100%;
+  padding-inline: clamp(0.9375rem, -2.4736rem + 14.554vw, 10.625rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.hero .text {
+  font-family: 'Luckiest Guy';
+  font-size: clamp(5.75rem, 4.2535rem + 6.385vw, 10rem);
+  line-height: clamp(5.75rem, 4.2535rem + 6.385vw, 10rem);
+  color: #006ed4;
+  position: relative;
+  text-shadow: 0px 10px #002236, 0px 15px #fff;
+}
+
+.text-container {
+  width: 100%;
+  max-width: 600px;
+}
+
+.hero img {
+  width: clamp(20.9375rem, 18.2306rem + 11.5493vw, 28.625rem);
+  height: clamp(20.9375rem, 18.2306rem + 11.5493vw, 28.625rem);
+}
+
+.ribbon {
+  width: 100%;
+  height: clamp(3.6875rem, 1.7729rem + 8.169vw, 9.125rem);
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 1rem;
+  flex-wrap: nowrap;
+  overflow-x: hidden;
+}
+
+.ribbon::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url('./img/line.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+
+.ribbon p {
+  font-family: 'Luckiest Guy';
+  font-size: clamp(1rem, 0.4718rem + 2.2535vw, 2.5rem);
+  line-height: clamp(1rem, 0.4718rem + 2.2535vw, 2.5rem);
+  flex-shrink: 0;
+  width: fit-contents;
+}
+
+.ribbon img {
+  width: clamp(1rem, 0.0317rem + 4.1315vw, 3.75rem);
+  height: clamp(1rem, 0.0317rem + 4.1315vw, 3.75rem);
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.press {
+  position: absolute;
+  width: clamp(5.5rem, 3.1232rem + 10.1408vw, 12.25rem);
+  height: clamp(5.5rem, 3.1232rem + 10.1408vw, 12.25rem);
+  right: clamp(1rem, -3.103rem + 13.2394vw, 8.8125rem);
+  top: 100%;
+}
+
+.address {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 5rem;
+}
+
+.address h1 {
+  font-family: 'Luckiest Guy';
+  font-weight: 400;
+  color: #002236;
+  font-size: clamp(1.5rem, 1.1479rem + 1.5023vw, 2.5rem);
+  line-height: clamp(2rem, 1.6479rem + 1.5023vw, 3rem);
+	margin-bottom: 1.5rem;
+}
+
+.address .content {
+  width: clamp(21.5625rem, 6.5317rem + 64.1315vw, 64.25rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #000;
+  border-radius: 24px;
+  padding: 1rem;
+  background-color: #006ed4;
+  box-shadow: 0px 2px 0px 0px rgba(0, 0, 0);
+	gap: 1.5rem;
+}
+
+.address .content p {
+  font-family: 'Luckiest Guy';
+  line-height: 32px;
+	color: #fff;
+  font-size: clamp(1.5rem, 1.368rem + 0.5634vw, 1.875rem);
+}
+
+.address .content button {
+	width: clamp(4.375rem, 2.8345rem + 6.5728vw, 8.75rem);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: "Single Day";
+	font-size: clamp(1.5rem, 1.1479rem + 1.5023vw, 2.5rem);
+	border-radius: 12px;
+	border: 2px solid #000;
+	box-shadow: 0px 2px 0px 0px rgba(0, 0, 0);
+	cursor: pointer;
+}
+
+.about{
+	width: 100%;
+	height: fit-content;
+	min-height: 1000px;
+	margin-top: clamp(1.875rem, 0.7746rem + 4.6948vw, 5rem);
+	position: relative;
+}
+
+.about .bg1 {
+	position: absolute;
+	width: 100%;
+	height: 1650px;
+	object-fit: cover;
+	object-position: 0%;
+}
+
+.about-content {
+	position: relative;
+	width: 100%;
+	height: 621px;
+	max-width: 890px;
+	top: 5rem;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.about-content .bg {
+	position: absolute;
+	width: 100%;
+	height: 621px;
+	object-fit: cover;
+}
+
+.about-content .content {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
+}
+
+.about-content h2 {
+	position: relative;
+	font-family: 'Luckiest Guy';
+	font-size: clamp(4.5rem, 3.8838rem + 2.6291vw, 6.25rem);
+	line-height: clamp(2.5rem, 1.368rem + 3.5634vw, 6.25rem);
+	color: #002236;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 2rem;
+}
+
+.about-content p {
+	font-family: 'Single Day';
+	font-size: clamp(1rem, 0.6479rem + 1.5023vw, 2rem);
+	line-height: clamp(1.5rem, 1.1479rem + 1.5023vw, 2.5rem);
+	color: #002236;
+	text-align: center;
+	margin-top: 1.5rem;
+	padding-inline: 5rem;
+}
+
+.gallery {
+	width: 100%;
+	height: fit-content;
+	min-height: 1000px;
+	margin-top: clamp(1.875rem, 0.7746rem + 4.6948vw, 5rem);
+	padding-inline: 1rem;
+	max-width: 80%;
+	margin: 0 auto;
+	position: relative;
+	transform: translate(10%, 10%);
+}
+
+.gallery img {
+	width: clamp(9.25rem, 5.9049rem + 14.2723vw, 18.75rem);
+	object-fit: contain;
+}
+
+@media screen and (max-width: 768px)  {
+	.hero {
+		flex-direction: column;
+	}
+
+	.menu {
+		padding-left: 0.5rem;
+	}
+}
+
+.xs {
+	display: none !important;
+}
+
+@media screen and (max-width: 768px)  {
+	.xl {
+		display: none !important;
+	}
+
+	.xs {
+		display: block;
+	}
+
+	.menu .nav {
+		display: none;
+	}
+	.press {
+		display: none;
+	}
+
+	.about .bg1 {
+		height: 1687px;
+	}
+
+	.about-content {
+		height: 423px;
+	}
+
+	.about-content .content h2 img {
+		display: none;
+	}
+
+	.about-content .bg {
+		height: 423px !important;
+	}
+
+	.about .gallery {
+		width: 100%;
+		display: flex;
+		justify-content: flex-start;
+		align-items: flex-start;
+		flex-wrap: wrap;
+		padding: 0;
+		margin: 0;
+	}
+}
