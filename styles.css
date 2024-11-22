@@ -3,8 +3,8 @@
   width: 100%;
   /* max-width: 1440px; */
   margin: 0 auto;
-	padding-top:  clamp(3.75rem, 3.2218rem + 2.2535vw, 5.25rem);
-	position: relative;
+  padding-top: clamp(3.75rem, 3.2218rem + 2.2535vw, 5.25rem);
+  position: relative;
 }
 
 .header {
@@ -18,10 +18,10 @@
   border: 3px solid black;
   box-shadow: 0px 2px 0px 0px rgba(0, 0, 0);
   position: fixed;
-	z-index: 9999;
-	top: 0;
-	left: 50%;
-	transform: translateX(-50%);
+  z-index: 9999;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .mock {
@@ -147,7 +147,7 @@
 
 .ribbon {
   width: 100%;
-	height: clamp(2.5rem, 0.1673rem + 9.9531vw, 9.125rem);
+  height: clamp(2.5rem, 0.1673rem + 9.9531vw, 9.125rem);
   position: relative;
   display: flex;
   justify-content: space-around;
@@ -158,22 +158,22 @@
 }
 
 .ribbon .swiper-wrapper {
-	display: flex;
-	gap: 1rem;
-	max-width: fit-content !important;
-	height: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  display: flex;
+  gap: 1rem;
+  max-width: fit-content !important;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .swiper-slide {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	gap: 1rem;
-	position: relative;
-	height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  position: relative;
+  height: 100%;
 }
 
 .ribbon::after {
@@ -181,7 +181,7 @@
   position: absolute;
   width: 100%;
   height: 100%;
-	min-height: fit-content;
+  min-height: fit-content;
   background: url('./img/line.svg');
   background-size: contain;
   background-repeat: repeat-x;
@@ -208,11 +208,11 @@
   position: absolute;
   width: clamp(5.5rem, 3.1232rem + 10.1408vw, 12.25rem);
   height: clamp(5.5rem, 3.1232rem + 10.1408vw, 12.25rem);
-	right: 0;
+  right: 0;
 }
 
 .swiper-wrapper {
-	height: 100%;
+  height: 100%;
 }
 
 .address {
@@ -230,7 +230,7 @@
   color: #002236;
   font-size: clamp(1.5rem, 1.1479rem + 1.5023vw, 2.5rem);
   line-height: clamp(2rem, 1.6479rem + 1.5023vw, 3rem);
-	margin-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .address .content {
@@ -243,169 +243,178 @@
   padding: 1rem;
   background-color: #006ed4;
   box-shadow: 0px 2px 0px 0px rgba(0, 0, 0);
-	gap: 1.5rem;
+  gap: 1.5rem;
 }
 
 .address .content p {
   font-family: 'Luckiest Guy';
   line-height: 32px;
-	color: #fff;
+  color: #fff;
   font-size: clamp(1.5rem, 1.368rem + 0.5634vw, 1.875rem);
 }
 
 .address .content button {
-	width: clamp(4.375rem, 2.8345rem + 6.5728vw, 8.75rem);
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	font-family: "Single Day";
-	font-size: clamp(1.5rem, 1.1479rem + 1.5023vw, 2.5rem);
-	border-radius: 12px;
-	border: 2px solid #000;
-	box-shadow: 0px 2px 0px 0px rgba(0, 0, 0);
-	cursor: pointer;
+  width: clamp(4.375rem, 2.8345rem + 6.5728vw, 8.75rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Single Day';
+  font-size: clamp(1.5rem, 1.1479rem + 1.5023vw, 2.5rem);
+  border-radius: 12px;
+  border: 2px solid #000;
+  box-shadow: 0px 2px 0px 0px rgba(0, 0, 0);
+  cursor: pointer;
 }
 
-.about{
-	width: 100%;
-	height: fit-content;
-	min-height: 1000px;
-	margin-top: clamp(1.875rem, 0.7746rem + 4.6948vw, 5rem);
-	position: relative;
+.about {
+  width: 100%;
+  height: fit-content;
+  min-height: 1000px;
+  margin-top: clamp(1.875rem, 0.7746rem + 4.6948vw, 5rem);
+  position: relative;
 }
 
 .about .bg1 {
-	position: absolute;
-	width: 100%;
-	height: 1650px;
-	object-fit: cover;
-	object-position: 0%;
+  position: absolute;
+  width: 100%;
+  height: 1650px;
+  object-fit: cover;
+  background-position: -100%;
 }
 
 .about-content {
-	position: relative;
-	width: 100%;
-	height: 621px;
-	max-width: 890px;
-	top: 5rem;
-	left: 50%;
-	transform: translateX(-50%);
+  position: relative;
+  width: 100%;
+  height: 621px;
+  max-width: 890px;
+  top: 5rem;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .about-content .bg {
-	position: absolute;
-	width: 100%;
-	height: 621px;
-	object-fit: cover;
+  position: absolute;
+  width: 100%;
+  height: 621px;
+  object-fit: cover;
 }
 
 .about-content .content {
-	position: relative;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
 }
 
 .about-content h2 {
-	position: relative;
-	font-family: 'Luckiest Guy';
-	font-size: clamp(4.5rem, 3.8838rem + 2.6291vw, 6.25rem);
-	line-height: clamp(2.5rem, 1.368rem + 3.5634vw, 6.25rem);
-	color: #fff;
-	text-align: center;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin-top: 4rem;
+  position: relative;
+  font-family: 'Luckiest Guy';
+  font-size: clamp(4.5rem, 3.8838rem + 2.6291vw, 6.25rem);
+  line-height: clamp(2.5rem, 1.368rem + 3.5634vw, 6.25rem);
+  color: #fff;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
 }
 
 .about-content p {
-	font-family: 'Single Day';
-	font-size: clamp(1rem, 0.6479rem + 1.5023vw, 2rem);
-	line-height: clamp(1.5rem, 1.1479rem + 1.5023vw, 2.5rem);
-	color: #fff;
-	text-align: center;
-	margin-top: 1.5rem;
-	padding-inline: 5rem;
+  font-family: 'Single Day';
+  font-size: clamp(1rem, 0.6479rem + 1.5023vw, 2rem);
+  line-height: clamp(1.5rem, 1.1479rem + 1.5023vw, 2.5rem);
+  color: #fff;
+  text-align: center;
+  margin-top: 1.5rem;
+  padding-inline: 5rem;
 }
 
 .gallery {
+  width: 100%;
+  height: fit-content;
+  margin-top: clamp(1.875rem, 0.7746rem + 4.6948vw, 5rem);
+  padding-inline: 1rem;
+  margin: 0 auto;
+  position: relative;
+  transform: translate(0%, 15%);
+  padding-top: 6rem;
+  row-gap: 1rem;
+  display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.gallery .box1, 
+.gallery .box2 {
 	width: 100%;
-	height: fit-content;
-	margin-top: clamp(1.875rem, 0.7746rem + 4.6948vw, 5rem);
-	padding-inline: 1rem;
-	max-width: 80%;
-	margin: 0 auto;
-	position: relative;
-	transform: translate(10%, 10%);
-	padding-top: 6rem;
-	row-gap: 1rem;
+	display: flex ;
+	justify-content: center;
+	align-items: center;
 }
 
 .gallery img {
-	width: clamp(6.25rem, 1.8486rem + 18.7793vw, 18.75rem);
-	object-fit: contain;
+  width: clamp(6.25rem, 1.8486rem + 18.7793vw, 18.75rem);
+  object-fit: contain;
 }
 
-@media screen and (max-width: 768px)  {
-	.hero {
-		flex-direction: column;
-	}
+@media screen and (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+  }
 
-	.menu {
-		padding-left: 0.5rem;
-	}
+  .menu {
+    padding-left: 0.5rem;
+  }
 }
 
 .xs {
-	display: none !important;
+  display: none !important;
 }
 
-@media screen and (max-width: 768px)  {
-	.xl {
-		display: none !important;
-	}
+@media screen and (max-width: 768px) {
+  .xl {
+    display: none !important;
+  }
 
-	.xs {
-		display: flex !important;
-	}
+  .xs {
+    display: flex !important;
+  }
 
-	.menu .nav {
-		display: none;
-	}
-	.press {
-		display: none;
-	}
+  .menu .nav {
+    display: none;
+  }
+  .press {
+    display: none;
+  }
 
-	.about .bg1 {
-		height: 887px;
-	}
+  .about .bg1 {
+    height: 887px;
+  }
 
-	.about-content {
-		height: 423px;
-	}
+  .about-content {
+    height: 423px;
+  }
 
-	.about-content .content h2 img {
-		display: none;
-	}
+  .about-content .content h2 img {
+    display: none;
+  }
 
-	.about-content .bg {
-		height: 423px !important;
-	}
+  .about-content .bg {
+    height: 423px !important;
+  }
 
-	.about .gallery {
-		width: 100%;
-		display: flex;
-		justify-content: flex-start;
-		align-items: flex-start;
-		flex-wrap: wrap;
-		row-gap: 1rem;
-		padding: 0;
-		margin: 0;
-		padding-top: 6rem;
-	}
+  .about .gallery {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    row-gap: 1rem;
+    padding: 0;
+    margin: 0;
+    padding-top: 6rem;
+  }
 }
 
 .sidebar {
@@ -419,7 +428,7 @@
   display: flex;
   flex-direction: column;
   transition: left 0.3s ease;
-	z-index: 10000;
+  z-index: 10000;
 }
 
 .sidebar-header {
@@ -445,7 +454,7 @@
 }
 
 .sidebar-content a {
-	font-size: clamp(1rem, 0.6479rem + 1.5023vw, 2rem);
+  font-size: clamp(1rem, 0.6479rem + 1.5023vw, 2rem);
   font-weight: 500;
   color: #000;
   text-decoration: none;
