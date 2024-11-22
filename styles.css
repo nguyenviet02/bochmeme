@@ -117,6 +117,11 @@
   color: #fff;
 }
 
+.menu .btns button.btn-text a {
+	color: #fff;
+	text-decoration: none;
+}
+
 .hero {
   width: 100%;
   padding-inline: clamp(0.9375rem, -2.4736rem + 14.554vw, 10.625rem);
@@ -222,6 +227,7 @@
   align-items: center;
   flex-direction: column;
   margin-top: 5rem;
+	scroll-margin-top: 10rem;
 }
 
 .address h1 {

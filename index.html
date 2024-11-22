@@ -21,7 +21,7 @@
 </head>
 
 <body>
-	<main class="container-layout">
+	<main id="home" class="container-layout">
 		<div class="header">
 			<div class="mock mock1">
 			</div>
@@ -30,21 +30,33 @@
 					<img src="./img/logo.svg" alt="logo">
 				</div>
 				<div class="nav">
-					<a href="#">Home</a>
-					<a href="#">About</a>
+					<a href="#home">Home</a>
+					<a href="#about">About</a>
 					<a href="#">How to buy</a>
 				</div>
 				<div class="btns xl">
 					<button>
-						<img src="./img/telegram_fill.svg" alt="tele">
+						<a href="https://t.me/thebookofchill">
+							<img src="./img/telegram_fill.svg" alt="tele">
+						</a>
 					</button>
 					<button>
-						<img src="./img/social_x_line.svg" alt="x">
+						<a href="https://x.com/thebookofchill">
+							<img src="./img/social_x_line.svg" alt="x">
+						</a>
 					</button>
-					<button class="btn-text">Buy Now</button>
+					<button class="btn-text">
+						<a href="#address">
+							Buy Now
+						</a>
+					</button>
 				</div>
 				<div class="btns xs">
-					<button class="btn-text">Buy Now</button>
+					<button class="btn-text">
+						<a href="#address">
+							Buy Now
+						</a>
+					</button>
 					<button class="btn-text" id="menu-btn">
 						<img src="./img/menu.svg" alt="">
 					</button>
@@ -137,16 +149,16 @@
 			<img src="./img/Press.svg" alt="">
 		</div>
 
-		<div class="address">
+		<div id="address" class="address">
 			<h1>Contract Address</h1>
 			<div class="content">
-				<!-- <p class="xl">Df6yfrKC8kZE3KNkrHERKzAetSxbrWeniQfyJY4Jpump</p>
-				<p class="xs">Df6yf3KN...Weump</p>
-				<button>Copy</button> -->
+				<p class="xl">BzPcC3X5fDNiCAisNHau54DZJheYbv5QgEmqXYcEpump</p>
+				<p class="xs">BzPcC3X5...Epump</p>
+				<button id="btnCA">Copy</button>
 			</div>
 		</div>
 
-		<div class="about">
+		<div id="about" class="about">
 			<img src="./img/about-bg.png" alt="" class="bg1">
 			<div class="about-content">
 				<img src="./img/about-bg-2.svg" alt="" class="bg">
